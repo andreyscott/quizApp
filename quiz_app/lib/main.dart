@@ -3,10 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:quiz_app/gradient.dart';
 
 void main() {
-  runApp(const MaterialApp(
+  runApp(MaterialApp(
       home: Scaffold(
-          body: GradientContainer(
-    Color.fromARGB(255, 3, 91, 163),
-    Color.fromARGB(255, 228, 226, 226),
-  ))));
+          body: Container(
+              decoration: const BoxDecoration(
+                  gradient: LinearGradient(colors: [
+                Color.fromARGB(255, 2, 57, 146),
+                Color.fromARGB(255, 3, 11, 25),
+              ], begin: Alignment.topLeft, end: Alignment.bottomLeft)),
+              child: ac))));
 }
