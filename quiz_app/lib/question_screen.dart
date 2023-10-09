@@ -28,7 +28,19 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
           onPressed: () {},
           style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
           icon: const Icon(Icons.arrow_right_alt),
-          label: const Text('Next Question'),
+          label: const Text('Answer 1'),
+        ),
+        OutlinedButton.icon(
+          onPressed: () {},
+          style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
+          icon: const Icon(Icons.arrow_right_alt),
+          label: const Text('Answer 2'),
+        ),
+        OutlinedButton.icon(
+          onPressed: () {},
+          style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
+          icon: const Icon(Icons.arrow_right_alt),
+          label: const Text('Answer 3'),
         )
       ],
     ));
