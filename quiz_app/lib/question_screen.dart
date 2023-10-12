@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/answer_button.dart';
 
 class QuestionsScreen extends StatefulWidget {
   const QuestionsScreen({super.key});
@@ -24,24 +25,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               fontFamily: AutofillHints.countryCode),
         ),
         const SizedBox(height: 35),
-        OutlinedButton.icon(
-          onPressed: () {},
-          style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
-          icon: const Icon(Icons.arrow_right_alt),
-          label: const Text('Answer 1'),
-        ),
-        OutlinedButton.icon(
-          onPressed: () {},
-          style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
-          icon: const Icon(Icons.arrow_right_alt),
-          label: const Text('Answer 2'),
-        ),
-        OutlinedButton.icon(
-          onPressed: () {},
-          style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
-          icon: const Icon(Icons.arrow_right_alt),
-          label: const Text('Answer 3'),
-        )
+        AnswerButton(answerText: 'The answer is', onTap: () {})
       ],
     ));
   }
