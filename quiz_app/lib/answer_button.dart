@@ -16,13 +16,16 @@ class AnswerButton extends StatelessWidget {
           vertical: 10,
           horizontal: 20,
         ),
-        backgroundColor: const Color.fromARGB(255, 143, 58, 58),
+        backgroundColor: const Color.fromARGB(255, 43, 35, 35),
         foregroundColor: const Color.fromARGB(255, 255, 255, 255),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       ),
 
       // icon: const Icon(Icons.arrow_right_alt),
-      child: Text(answerText),
+      child: Text(
+        answerText,
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }
